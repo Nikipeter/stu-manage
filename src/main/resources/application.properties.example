@@ -1,0 +1,22 @@
+# =============================================
+# stu-manage — Application Configuration
+# =============================================
+# HOW TO USE:
+# 1. Copy this file
+# 2. Rename the copy to application.properties
+# 3. Fill in your own Oracle DB credentials
+# 4. Never share your application.properties!
+# =============================================
+
+spring.application.name=stu-manage
+
+# Oracle Database Connection
+spring.datasource.url=jdbc:oracle:thin:@//localhost:1521/XE
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+
+# JPA / Hibernate Settings
+spring.jpa.database-platform=org.hibernate.dialect.OracleDialect
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
